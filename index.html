@@ -1,0 +1,47 @@
+---
+layout: default
+title: Home
+---
+
+
+<!-- Header / Hero Section -->
+<div class="hero-section text-dark py-3 mb-5 shadow-sm">
+    <div class="container">
+        <h3 class="fw-bold mb-3 ">Research Summary</h3>
+        <p class="lead mx-auto ms-4">
+            Our research focuses on the development of bioinformatics and statistical approaches to address challenges
+            posed in biological inferences from high-throughput proteomics data, and their application to biomedical
+            problems. For this purpose, we develop algorithms for peak detection and quantification, identification of
+            structures in multivariate data, stochastic time-course modeling to extract dynamical features, construction
+            of protein networks and error control in the resulting inferences. In collaboration with our colleagues,
+            experimentalists, we apply these techniques in various systems for systematic studies of post-translational
+            modifications, proteome dynamics, signal transductions and mass informatics. Our goal is to promote
+            identification of functional dysregulations associated with changes in the state of a biological system. An
+            important unit of our research is a mass spectrum.
+        </p>
+        <div class="text-center">
+            <img src="{{ '/assets/images/MassSpectra.png' | relative_url }}" class="img-fluid" alt="MassSpectra"
+                height="30">
+        </div>
+
+        <h4>Outlined below are examples of our research work.</h4>
+
+        <ul>
+            {% assign subfolder_posts = site.posts | where_exp:"post", "post.path contains '_posts/researchs/'" %}
+
+            {% for post in subfolder_posts %}
+            <li>
+                <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+                <p>{{ post.excerpt }}</p>
+
+                <div class="text-center">
+                    <img src="{{ post.img | prepend: '/assets/images/'| relative_url }}" class="img-fluid" alt="MassSpectra"
+                        height="30">
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+
+    </div>
+</div>
+

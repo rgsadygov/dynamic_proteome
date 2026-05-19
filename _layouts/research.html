@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<h3>{{ page.title }}</h3>
+<p>{{ page.date | date_to_string }} </p>
+
+{{ content }}
+
+<div class="text-center">
+    <img src="{{ page.img | prepend: '/assets/images/'| relative_url }}" class="img-fluid" alt="MassSpectra"
+        height="30">
+</div>
+
+
+<h5><a href="{{ page.paper_link }}">{{ page.paper_title }}</a></h5>

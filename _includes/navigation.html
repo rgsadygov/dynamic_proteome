@@ -1,0 +1,44 @@
+<!-- <nav> -->
+<!-- {% for item in site.data.navigation %} -->
+<!-- <a href="{{ item.link }}"{% if page.url == item.link %} class="current"{% endif %}>{{ item.name }}</a> -->
+<!-- {% endfor %} -->
+<!-- </nav> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+
+    <!-- LEFT LOGO / BRAND -->
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="{{ '/assets/images/UTMB_newlogo_darkback.png' | relative_url }}" alt="utmb Logo" height="100"
+        class="d-inline-block align-text-top me-2">
+      Research
+    </a>
+
+    <!-- Hamburger Menu for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- COLLAPSIBLE LINKS -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- <li class="nav-item"><a class="nav-link active" href="/About/">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Blog/">Teaching</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Blog/">People</a></li> -->
+
+        {% for item in site.data.navigation %}
+        <li class="nav-item"><a class="nav-link" href="{{ item.link }}">{{ item.name }}</a></li>
+        {% endfor %}
+
+      </ul>
+    </div>
+
+    <!-- RIGHT LOGO (Stays on the far right, outside the collapse) -->
+    <a class="navbar-brand d-none d-lg-block ms-lg-2" href="/">
+      <img src="{{ '/assets/images/scsb_logo_lg-removebg-preview.png' | relative_url }}" height="100" alt="scsb Logo"
+        height="30">
+    </a>
+
+  </div>
+</nav>

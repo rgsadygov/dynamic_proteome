@@ -1,0 +1,17 @@
+---
+layout: default
+title: Courses
+---
+<h2>Courses</h2>
+
+<ul>
+    {% assign subfolder_posts = site.posts | where_exp:"post", "post.path contains '_posts/teaching/'" %}
+
+    {% for post in subfolder_posts %}
+    <li>
+        <h4>{{ post.title }}</h4>
+        <p>{{ post.excerpt }}</p> 
+        
+    </li>
+    {% endfor %}
+</ul>
