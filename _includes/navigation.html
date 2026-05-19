@@ -8,7 +8,7 @@
   <div class="container-fluid">
 
     <!-- LEFT LOGO / BRAND -->
-    <a class="navbar-brand d-flex align-items-center" href="/">
+    <a class="navbar-brand d-flex align-items-center" href="{{ '/' | relative_url }}">
       <img src="{{ '/assets/images/UTMB_newlogo_darkback.png' | relative_url }}" alt="utmb Logo" height="100"
         class="d-inline-block align-text-top me-2">
       Research
@@ -28,7 +28,7 @@
         <li class="nav-item"><a class="nav-link" href="/Blog/">People</a></li> -->
 
         {% for item in site.data.navigation %}
-        <li class="nav-item"><a class="nav-link" href="{{ item.link }}">{{ item.name }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ item.link | relative_url }}">{{ item.name }}</a></li>
         {% endfor %}
 
       </ul>
