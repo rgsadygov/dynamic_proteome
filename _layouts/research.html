@@ -3,8 +3,9 @@ layout: default
 ---
 <h3>{{ page.title }}</h3>
 <p>{{ page.date | date_to_string }} </p>
-
-{{ content }}
+<div style="text-align: justify;">
+    <p class="lead mx-auto ms-4">{{ content }}</p>
+</div>
 
 <div class="text-center">
     <img src="{{ page.img | prepend: '/assets/images/'| relative_url }}" class="img-fluid" alt="MassSpectra"
@@ -12,4 +13,4 @@ layout: default
 </div>
 
 
-<h5><a href="{{ page.paper_link }}">{{ page.paper_title }}</a></h5>
+<a href="{{ page.paper_link }}">{{ page.paper_title }}</a>

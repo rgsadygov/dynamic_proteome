@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Research</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	</head>
+  <body class="container">
+    <!-- <nav> -->
+<!--  -->
+<!-- <a href="/Publications/">Publications</a> -->
+<!--  -->
+<!-- <a href="/Research/" class="current">Research</a> -->
+<!--  -->
+<!-- <a href="/Teaching/">Teaching</a> -->
+<!--  -->
+<!-- <a href="/About/">About</a> -->
+<!--  -->
+<!-- <a href="/People/">People</a> -->
+<!--  -->
+<!-- </nav> -->
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+
+    <!-- LEFT LOGO / BRAND -->
+    <a class="navbar-brand d-flex align-items-center" href="/">
+      <img src="/assets/images/UTMB_newlogo_darkback.png" alt="utmb Logo" height="100"
+        class="d-inline-block align-text-top me-2">
+      Home
+    </a>
+
+    <!-- Hamburger Menu for Mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- COLLAPSIBLE LINKS -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <!-- <li class="nav-item"><a class="nav-link active" href="/About/">Publications</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Blog/">Teaching</a></li>
+        <li class="nav-item"><a class="nav-link" href="/Blog/">People</a></li> -->
+
+        
+        <li class="nav-item"><a class="nav-link" href="/Publications/">Publications</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/Research/">Research</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/Teaching/">Teaching</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/About/">About</a></li>
+        
+        <li class="nav-item"><a class="nav-link" href="/People/">People</a></li>
+        
+
+      </ul>
+    </div>
+
+    <!-- RIGHT LOGO (Stays on the far right, outside the collapse)
+    <a class="navbar-brand d-none d-lg-block ms-lg-2" href="/">
+      <img src="/assets/images/scsb_logo_lg-removebg-preview.png" height="100" alt="scsb Logo"
+        height="30">
+    </a> -->
+
+  </div>
+</nav>
+
+    
+	<p><!-- Header / Hero Section -->
+<div class="hero-section text-dark py-3 mb-5 shadow-sm">
+    <div class="container">
+        <h3 class="fw-bold mb-3 ">Research Summary</h3>
+        <p class="lead mx-auto ms-4" style="text-align: justify;">
+            Our research focuses on the development of bioinformatics and statistical approaches to address challenges
+            posed in biological inferences from high-throughput proteomics data, and their application to biomedical
+            problems. For this purpose, we develop algorithms for peak detection and quantification, identification of
+            structures in multivariate data, stochastic time-course modeling to extract dynamical features, construction
+            of protein networks and error control in the resulting inferences. In collaboration with our colleagues,
+            experimentalists, we apply these techniques in various systems for systematic studies of post-translational
+            modifications, proteome dynamics, signal transductions and mass informatics. Our goal is to promote
+            identification of functional dysregulations associated with changes in the state of a biological system. An
+            important unit of our research is a mass spectrum.
+        </p>
+        <div class="text-center">
+            <img src="/assets/images/MassSpectra.png" class="img-fluid" alt="MassSpectra"
+                height="30">
+        </div>
+
+        <h4>Outlined below are examples of our research work.</h4>
+
+        <ul>
+            
+
+            
+            <li style="text-align: justify; ">
+                <h4><a href="/2019/01/03/Protein-Homeostasis-(Proteostasis).html">Protein Homeostasis (Proteostasis)</a></h4>
+                
+                <p class="lead mx-auto ms-4" ><p>Protein homeostasis (proteostasis) is achieved via continuous synthesis and degradation of cellular proteins. 
+Proteostasis is important for proper protein functioning, and it is dysregulated in many diseases. 
+Metabolic labeling followed by LC-MS is a powerful technique to study proteostasis in a large scale (thousands of proteins).</p>
+
+<p>We develop bioinformatics techniques to study proteostasis to elucidate biological process that are associated with diseases. 
+Our techniques include signal processing for feature detection and quantification, time-course modeling, pattern recognition, and pathway analysis. 
+The protein interactions figure below shows the proteins of Glycolysis/Gluconeogenesis (blue) and Hypertrophic cardiomyopathy (red) pathways in the 
+matrix of the all quantified (white) proteins in mouse heart proteome. Bioinformatic processing of dynamic proteome data indicates that the correlation 
+between the pathways is altered during transition to heart hypertrophy</p>
+</p>
+                <a href="https://academic.oup.com/bioinformatics/article/35/22/4748/5480130">Borzou, Ahmad, Razie Yousefi, and Rovshan G. Sadygov. Another look at matrix correlations. Bioinformatics 35.22 (2019): 4748-4753.2019, Pages 4748–4753</a>
+                <div class="text-center">
+                    <img src="/assets/images/Protein_homeostasis.png" class="img-fluid" alt="MassSpectra"
+                        height="30">
+                </div>
+            </li>
+            
+            <li style="text-align: justify; ">
+                <h4><a href="/2019/01/01/Proteome-Dynamics-using-heavy-water-metabolic-labeling-and-LC-MS.html">Proteome Dynamics using heavy water metabolic labeling and LC-MS</a></h4>
+                
+                <p class="lead mx-auto ms-4" ><p>Metabolic labeling with heavy water followed by LC-MS is a high throughput approach to study proteostasis in vivo. Advances in mass spectrometry and sample processing have allowed consistent detection of thousands of proteins at multiple time points. However, freely available automated bioinformatics tools to analyze and extract protein decay rate constants are lacking. Here, we describe d2ome-a robust, automated software solution for in vivo protein turnover analysis. d2ome is highly scalable, uses innovative approaches to nonlinear fitting, implements Grubbs’ outlier detection and removal, uses weighted-averaging of replicates, applies a data dependent elution time windowing, and uses mass accuracy in peak detection. Here, we discuss the application of d2ome in a comparative study of protein turnover in the livers of normal vs Western diet-fed LDLR-/- mice (mouse model of nonalcoholic fatty liver disease), which contained 256 LC-MS experiments. The study revealed reduced stability of 40S ribosomal protein subunits in the Western diet-fed mice.</p>
+</p>
+                <a href="https://doi.org/10.1021/acs.jproteome.8b00417">Sadygov, Rovshan G., et al. d2ome, software for in vivo protein turnover analysis using heavy water labeling and LC–MS, reveals alterations of hepatic proteome dynamics in a mouse model of NAFLD. Journal of proteome research 17.11 (2018): 3740-3748.</a>
+                <div class="text-center">
+                    <img src="/assets/images/Proteome_Dynamics.jpg" class="img-fluid" alt="MassSpectra"
+                        height="30">
+                </div>
+            </li>
+            
+            <li style="text-align: justify; ">
+                <h4><a href="/2018/08/20/Timepoint-selection-in-heavy-water-metabolic-labeling.html">Timepoint selection in heavy water metabolic labeling</a></h4>
+                
+                <p class="lead mx-auto ms-4" ><p>We developed a formula-based stochastic simulation strategy for TPS for in vivo studies with heavy water metabolic labeling and LC-MS. We model the rate constant (lognormal), measurement error (Laplace), peptide length (Gamma), relative abundance (RA) of the monoisotopic peak (beta regression), and the number of exchangeable hydrogens (Gamma regression). The parameters of the distributions are determined using corresponding empirical probability density functions from a large-scale dataset of murine heart proteome. The models are used in simulations of the rate constant to minimize the root-mean-squared error.</p>
+</p>
+                <a href="https://pubs.acs.org/doi/full/10.1021/acs.jproteome.0c00023">Sadygov, Vugar R., William Zhang, and Rovshan G. Sadygov. Timepoint Selection Strategy for In Vivo Proteome Dynamics from Heavy Water Metabolic Labeling and LC–MS. Journal of proteome research 19.5 (2020): 2105-2112.</a>
+                <div class="text-center">
+                    <img src="/assets/images/Timepoint_selection.png" class="img-fluid" alt="MassSpectra"
+                        height="30">
+                </div>
+            </li>
+            
+        </ul>
+
+    </div>
+</div>
+
+</p>
+	
+	
+    
+	
+	<!-- Bootstrap Bundle with Popper -->	
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	<script>
+	  document.addEventListener("DOMContentLoaded", function () {
+		// Get current page URL path
+		const currentPath = window.location.pathname;
+		
+		// Select all nav links
+		const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+		
+		navLinks.forEach(link => {
+		  // Remove active class from all links first
+		  link.classList.remove('active');
+		  link.removeAttribute('aria-current');
+		  
+		  // Check if the link's href matches the current path
+		  if (link.getAttribute('href') === currentPath) {
+			link.classList.add('active');
+			link.setAttribute('aria-current', 'page');
+		  }
+		});
+	  });
+	</script>
+  </body>
+</html>

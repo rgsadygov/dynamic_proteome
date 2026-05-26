@@ -12,6 +12,8 @@
 <!--  -->
 <!-- <a href="/Publications/">Publications</a> -->
 <!--  -->
+<!-- <a href="/Research/">Research</a> -->
+<!--  -->
 <!-- <a href="/Teaching/">Teaching</a> -->
 <!--  -->
 <!-- <a href="/About/">About</a> -->
@@ -27,7 +29,7 @@
     <a class="navbar-brand d-flex align-items-center" href="/">
       <img src="/assets/images/UTMB_newlogo_darkback.png" alt="utmb Logo" height="100"
         class="d-inline-block align-text-top me-2">
-      Research
+      Home
     </a>
 
     <!-- Hamburger Menu for Mobile -->
@@ -46,6 +48,8 @@
         
         <li class="nav-item"><a class="nav-link" href="/Publications/">Publications</a></li>
         
+        <li class="nav-item"><a class="nav-link" href="/Research/">Research</a></li>
+        
         <li class="nav-item"><a class="nav-link" href="/Teaching/">Teaching</a></li>
         
         <li class="nav-item"><a class="nav-link" href="/About/">About</a></li>
@@ -56,84 +60,23 @@
       </ul>
     </div>
 
-    <!-- RIGHT LOGO (Stays on the far right, outside the collapse) -->
+    <!-- RIGHT LOGO (Stays on the far right, outside the collapse)
     <a class="navbar-brand d-none d-lg-block ms-lg-2" href="/">
       <img src="/assets/images/scsb_logo_lg-removebg-preview.png" height="100" alt="scsb Logo"
         height="30">
-    </a>
+    </a> -->
 
   </div>
 </nav>
+
     
 	<p><!-- Header / Hero Section -->
 <div class="hero-section text-dark py-3 mb-5 shadow-sm">
     <div class="container">
-        <h3 class="fw-bold mb-3 ">Research Summary</h3>
+        <!-- <h3 class="fw-bold mb-3 ">Welcome to Our Lab</h3> -->
         <p class="lead mx-auto ms-4">
-            Our research focuses on the development of bioinformatics and statistical approaches to address challenges
-            posed in biological inferences from high-throughput proteomics data, and their application to biomedical
-            problems. For this purpose, we develop algorithms for peak detection and quantification, identification of
-            structures in multivariate data, stochastic time-course modeling to extract dynamical features, construction
-            of protein networks and error control in the resulting inferences. In collaboration with our colleagues,
-            experimentalists, we apply these techniques in various systems for systematic studies of post-translational
-            modifications, proteome dynamics, signal transductions and mass informatics. Our goal is to promote
-            identification of functional dysregulations associated with changes in the state of a biological system. An
-            important unit of our research is a mass spectrum.
-        </p>
-        <div class="text-center">
-            <img src="/assets/images/MassSpectra.png" class="img-fluid" alt="MassSpectra"
-                height="30">
-        </div>
-
-        <h4>Outlined below are examples of our research work.</h4>
-
-        <ul>
-            
-
-            
-            <li>
-                <h4><a href="/2019/01/03/Protein-Homeostasis-(Proteostasis).html">Protein Homeostasis (Proteostasis)</a></h4>
-                <p><p>Protein homeostasis (proteostasis) is achieved via continuous synthesis and degradation of cellular proteins. 
-Proteostasis is important for proper protein functioning, and it is dysregulated in many diseases. 
-Metabolic labeling followed by LC-MS is a powerful technique to study proteostasis in a large scale (thousands of proteins).</p>
-
-<p>We develop bioinformatics techniques to study proteostasis to elucidate biological process that are associated with diseases. 
-Our techniques include signal processing for feature detection and quantification, time-course modeling, pattern recognition, and pathway analysis. 
-The protein interactions figure below shows the proteins of Glycolysis/Gluconeogenesis (blue) and Hypertrophic cardiomyopathy (red) pathways in the 
-matrix of the all quantified (white) proteins in mouse heart proteome. Bioinformatic processing of dynamic proteome data indicates that the correlation 
-between the pathways is altered during transition to heart hypertrophy</p>
-</p>
-
-                <div class="text-center">
-                    <img src="/assets/images/Protein_homeostasis.png" class="img-fluid" alt="MassSpectra"
-                        height="30">
-                </div>
-            </li>
-            
-            <li>
-                <h4><a href="/2019/01/01/Proteome-Dynamics-using-heavy-water-metabolic-labeling-and-LC-MS.html">Proteome Dynamics using heavy water metabolic labeling and LC-MS</a></h4>
-                <p><p>Metabolic labeling with heavy water followed by LC-MS is a high throughput approach to study proteostasis in vivo. Advances in mass spectrometry and sample processing have allowed consistent detection of thousands of proteins at multiple time points. However, freely available automated bioinformatics tools to analyze and extract protein decay rate constants are lacking. Here, we describe d2ome-a robust, automated software solution for in vivo protein turnover analysis. d2ome is highly scalable, uses innovative approaches to nonlinear fitting, implements Grubbs’ outlier detection and removal, uses weighted-averaging of replicates, applies a data dependent elution time windowing, and uses mass accuracy in peak detection. Here, we discuss the application of d2ome in a comparative study of protein turnover in the livers of normal vs Western diet-fed LDLR-/- mice (mouse model of nonalcoholic fatty liver disease), which contained 256 LC-MS experiments. The study revealed reduced stability of 40S ribosomal protein subunits in the Western diet-fed mice.</p>
-</p>
-
-                <div class="text-center">
-                    <img src="/assets/images/Proteome_Dynamics.jpg" class="img-fluid" alt="MassSpectra"
-                        height="30">
-                </div>
-            </li>
-            
-            <li>
-                <h4><a href="/2018/08/20/Timepoint-selection-in-heavy-water-metabolic-labeling.html">Timepoint selection in heavy water metabolic labeling</a></h4>
-                <p><p>We developed a formula-based stochastic simulation strategy for TPS for in vivo studies with heavy water metabolic labeling and LC-MS. We model the rate constant (lognormal), measurement error (Laplace), peptide length (Gamma), relative abundance (RA) of the monoisotopic peak (beta regression), and the number of exchangeable hydrogens (Gamma regression). The parameters of the distributions are determined using corresponding empirical probability density functions from a large-scale dataset of murine heart proteome. The models are used in simulations of the rate constant to minimize the root-mean-squared error.</p>
-</p>
-
-                <div class="text-center">
-                    <img src="/assets/images/Timepoint_selection.png" class="img-fluid" alt="MassSpectra"
-                        height="30">
-                </div>
-            </li>
-            
-        </ul>
-
+            Our lab works on computational proteomics of protein turnover and protein networks. We develop and implement bioinformatics and statistical approaches for biological inferences from large-scale, high-throughput proteomics data and their applications in biomedical problems. We developed algorithms for peak detection and quantification, identification of structures in multivariate data, stochastic time-course modeling to extract dynamical features, construction of protein networks, and error control in the resulting inferences. In collaboration with our experimentalist colleagues, we applied these techniques to study molecular mechanisms in non-alcoholic fatty liver disease, aging, and neurodegenerative diseases.
+        </p>        
     </div>
 </div>
 

@@ -11,7 +11,7 @@
     <a class="navbar-brand d-flex align-items-center" href="{{ '/' | relative_url }}">
       <img src="{{ '/assets/images/UTMB_newlogo_darkback.png' | relative_url }}" alt="utmb Logo" height="100"
         class="d-inline-block align-text-top me-2">
-      Research
+      Home
     </a>
 
     <!-- Hamburger Menu for Mobile -->
@@ -28,17 +28,17 @@
         <li class="nav-item"><a class="nav-link" href="/Blog/">People</a></li> -->
 
         {% for item in site.data.navigation %}
-        <li class="nav-item"><a class="nav-link" href="{{ item.link | relative_url }}">{{ item.name }}</a></li>
+        <li class="nav-item"><a class="nav-link" href="{{ item.link | relative_url}}">{{ item.name }}</a></li>
         {% endfor %}
 
       </ul>
     </div>
 
-    <!-- RIGHT LOGO (Stays on the far right, outside the collapse) -->
-    <!-- <a class="navbar-brand d-none d-lg-block ms-lg-2" href="/">
+    <!-- RIGHT LOGO (Stays on the far right, outside the collapse)
+    <a class="navbar-brand d-none d-lg-block ms-lg-2" href="/">
       <img src="{{ '/assets/images/scsb_logo_lg-removebg-preview.png' | relative_url }}" height="100" alt="scsb Logo"
-        height="30"> -->
-    </a>
+        height="30">
+    </a> -->
 
   </div>
 </nav>
